@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title></title>
+  <!-- CSS -->
+  <link rel='stylesheet' type='text/css' href='stylesheets/style.css'>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <!-- JS -->
+  <script type='text/javascript' src='javascripts/sidebar.js'></script>
+  <script type="text/javascript" src='javascripts/ajax.js'></script>
+</head>
+<body>
+
+<!-- ADD COACH FORM -->
+<form id="coach-adder">
+  <input type="text" placeholder="name" id="name">
+  <button id="add-coach">+ Coach</button>
+</form>
+
+<!-- RENDER ALL COACHES -->
+<ul class="coaches-list">
+  <% @coaches.each do |coach| %>
+    <li><%= coach %></li>
+  <% end %>
+</ul>
+
+
+<!-- SIDEBAR -->
+<button id="sidebar-show">+ Sidebar</button>
+<div class="sidebar">
+  </h6>this is a rad sidebar</h6>
+  <button id="sidebar-hide">- Sidebar</button>
+</div>
+
+</body>
+</html>

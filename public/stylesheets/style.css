@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+html {
+  background: #E4F1FE;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200px;
+  background: red;
+  display: none;
+}
